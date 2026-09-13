@@ -1,5 +1,3 @@
-package org.isaqb.wrong;
-
 public class SavingAccount extends Account {
     
     public SavingAccount(String accountNumber, Customer customer) {

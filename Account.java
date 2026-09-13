@@ -1,5 +1,3 @@
-package org.isaqb.wrong;
-
 public abstract class Account {
 
     private String accountNumber;

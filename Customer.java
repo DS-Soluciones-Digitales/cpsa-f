@@ -1,5 +1,3 @@
-package org.isaqb.wrong;
-
 public class Customer {
     private String id;
     private String lastName;

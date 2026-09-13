@@ -1,5 +1,3 @@
-package org.isaqb.wrong;
-
 public class CashDrawnMachine {
 
     public static void main(String args[]) {
