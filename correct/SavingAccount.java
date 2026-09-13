@@ -1,4 +1,4 @@
-package wrong;
+package correct;
 
 public class SavingAccount extends Account {
     

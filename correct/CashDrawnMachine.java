@@ -1,10 +1,10 @@
-package wrong;
+package correct;
 
 public class CashDrawnMachine {
 
     public static void main(String args[]) {
         
-        System.out.println("Incorrecto");
+        System.out.println("Correcto");
 
         Customer customer = new Customer("28119867", "Perez Ramirez", "Juan");
         

@@ -1,4 +1,4 @@
-package wrong;
+package correct;
 
 public abstract class Account {
 
