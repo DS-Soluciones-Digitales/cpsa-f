@@ -1,0 +1,6 @@
+graph LR
+    A[wrong.pedidos]:::cliente -->|usa| B[wrong.inventarios]:::base
+    B -->|"❌ registrarUsoEnPedido()"| A
+
+    classDef cliente fill:#4A90D9,stroke:#2C5F8A,stroke-width:2px,color:#fff
+    classDef base fill:#D9534F,stroke:#A83430,stroke-width:2px,color:#fff
