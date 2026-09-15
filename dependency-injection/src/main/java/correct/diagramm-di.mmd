@@ -1,0 +1,25 @@
+graph LR
+    subgraph pedidos[correct.pedidos]
+        PS[PedidoService]:::cliente
+        N["«interface» Notificador"]:::abstraccion
+        NE[NotificadorEmail]:::base
+    end
+
+    subgraph inventario[correct.inventarios]
+        IR["«interface» InventarioRepository"]:::abstraccion
+        IRI[InventarioRepositoryImpl]:::base
+    end
+
+    M[PedidosModule]:::modulo
+
+    PS -->|depende de| N
+    PS -->|depende de| IR
+    NE -.->|implementa| N
+    IRI -.->|implementa| IR
+    M -->|"bind(Notificador → NotificadorEmail)"| N
+    M -->|"bind(InventarioRepository → InventarioRepositoryImpl)"| IR
+
+    classDef cliente fill:#4A90D9,stroke:#2C5F8A,stroke-width:2px,color:#fff
+    classDef base fill:#5FAD56,stroke:#3D7A36,stroke-width:2px,color:#fff
+    classDef abstraccion fill:#F0AD4E,stroke:#B37A2E,stroke-width:2px,color:#fff
+    classDef modulo fill:#8E6FCE,stroke:#5D4A8A,stroke-width:2px,color:#fff

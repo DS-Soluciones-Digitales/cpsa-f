@@ -2,4 +2,5 @@
     <module>information-hiding</module>
     <module>interface-segregation</module>
     <module>dependency-inversion</module>
+    <module>dependency-injection</module>
 </modules>

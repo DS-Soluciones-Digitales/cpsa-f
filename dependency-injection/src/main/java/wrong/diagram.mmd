@@ -1,0 +1,7 @@
+graph LR
+    A[Pedido]:::cliente -->|"new InventarioRepository()"| B[InventarioRepository]:::base
+    A -->|"new NotificadorEmail()"| C[NotificadorEmail]:::base
+    A -->|usa| D[Producto]:::base
+
+    classDef cliente fill:#4A90D9,stroke:#2C5F8A,stroke-width:2px,color:#fff
+    classDef base fill:#D9534F,stroke:#A83430,stroke-width:2px,color:#fff

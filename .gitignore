@@ -5,3 +5,5 @@
 /interface-segregation/*.iml
 /information-hidding/target
 /information-hidding/*.iml
+/dependency-injection/target
+/dependency-injection/*.iml
