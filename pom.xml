@@ -1,3 +1,4 @@
 <modules>
     <module>information-hiding</module>
+    <module>interface-segregation</module>
 </modules>
